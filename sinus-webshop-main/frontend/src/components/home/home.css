@@ -1,0 +1,211 @@
+/* .home-conatiner {
+  padding-top: 5rem;
+} */
+
+.showcase {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.showcae-content {
+  height: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.right-content {
+  margin-right: 3rem;
+}
+
+.square {
+  padding-top: 3.5rem;
+  padding-left: 1rem;
+}
+.img-content {
+  display: grid;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1px);
+  gap: -30rem;
+}
+.skateboard {
+  padding-top: 1rem;
+  transform: rotate(4deg);
+  cursor: pointer;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.circle {
+  margin-top: 3.5rem;
+  width: 334px;
+  height: 334px;
+  border-radius: 50%;
+  background-color: #c4c4c42f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-two {
+  padding-right: 4rem;
+}
+.circle-text {
+  padding-top: 1rem;
+}
+.left-content-text {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.p-text {
+  line-height: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.rightfil {
+  cursor: pointer;
+  height: 3rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.rightfil:hover {
+  padding-left: 8px;
+}
+
+.down-fil {
+  display: none;
+}
+
+.home-row {
+  padding: 6rem 0 4rem 0;
+  display: flex;
+  text-align: center;
+}
+.line-left,
+.line-right {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.line-left {
+  margin: 0 1rem 0 0rem;
+}
+.line-right {
+  margin-left: 1rem;
+}
+.home-line-text {
+  width: 10rem;
+  margin-bottom: -0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.cap-foto {
+  height: 16rem;
+}
+.skate-foto {
+  height: 22rem;
+}
+
+.hoodie-foto {
+  height: 20rem;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.trend-cap {
+  width: 25rem;
+  height: 25rem;
+  padding: 2rem;
+  border-left: 1px solid #d3d3d3;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .showcase {
+    height: 60rem;
+
+    width: 100%;
+  }
+
+  .showcae-content {
+    height: auto;
+
+    width: auto;
+  }
+
+  .img-content {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1px);
+
+    padding-right: 25rem;
+  }
+
+  .right-content {
+    margin-left: 3rem;
+  }
+
+  .showcae-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .rightfil {
+    display: none;
+  }
+
+  .down-fil {
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .down-fil:hover {
+    padding-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trend-cap,
+  .trend-foto {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+    border-left: 1px solid #d3d3d3;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+
+  .photo-container {
+    flex-direction: column;
+  }
+}
